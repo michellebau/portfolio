@@ -11,7 +11,7 @@ const projectsData = [
     description: "Porfolio website (what you're viewing) built with React, Tailwind CSS, Next.js, Node.js, and deployed on Vercel.",
     image: "/images/projects/react_logo.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/michellebau/portfolio",
     previewUrl: "/",
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     description: "A web app featuring PyTorch and TensorFlow suggesting how to recycle an item based on its image.",
     image: "/images/projects/torch_logo.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/michellebau/recycling",
     previewUrl: "/",
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     description: "Created a Figma clickable prototype for professor's project. This design consists of a landing page and events page(s) for the purpose of displaying guest lectures on campus.",
     image: "/images/projects/WIS_Club.png",
     tag: ["All", "Design"],
-    gitUrl: "/",
+    gitUrl: "https://www.figma.com/file/jBk34sfHdqMMdZj19u1mGK/421-UI?type=design&node-id=0%3A1&mode=design&t=IEwuH9Mqf8P6gdys-1",
     previewUrl: "/",
   },
   {
