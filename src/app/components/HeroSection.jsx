@@ -37,8 +37,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-[#fff] text-base sm:text-lg mb-6 lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              voluptuous.
+              I'm a May 2024 graduate seeking opportunities in web development or data analysis.
             </p>
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-2">
               <Link
