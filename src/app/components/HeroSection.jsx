@@ -66,7 +66,6 @@ const HeroSection = () => {
               <Image
                 src="/images/headshot.jpg"
                 alt="hero image"
-                layout="responsive"
                 width={300}
                 height={300}
                 className="rounded-md"
