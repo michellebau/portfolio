@@ -23,18 +23,66 @@ const ContactSection = () => {
                     </Link>
                 </div>
             </div>
-          <div className="flex flex-col">
-            
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/viewform?embedded=true"
-                width="100%"
-                height="100%"
-            >Loading…
-            </iframe>
-            </div>
-            
-          
+            <div>
         
+          <form className="flex flex-col" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/formResponse" method="POST" target="_self">
+            <div className="mb-6">
+              <label
+                for="name"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="entry.1307508684"
+                id="name"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Jane Smith"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                for="email"
+                className="text-white block text-sm mb-2 font-medium"
+              >
+                Email Address
+              </label>
+              <input
+                type="text"
+                name="entry.1122884648"
+                id="email"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="jane.smith@organization.com"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                for="message"
+                className="text-white block text-sm mb-2 font-medium"
+              >
+                Message
+              </label>
+              <textarea
+                type="text"
+                name="entry.1599772864"
+                id="message"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Let's talk about..."
+              />
+            </div>
+            <button
+              type="submit"
+              value="Submit"
+              className="bg-blue-500 hover:bg-blue-100 text-white hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
         </section>
     );
 };
