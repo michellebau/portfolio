@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const ContactSection = () => {
     return (
-        <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+        <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
             <div>
                 <h5 className="text-3xl font-bold text-white my-2">Let&apos;s Connect</h5>
                 <p className="text-white mb-4 max-w-md">
@@ -23,6 +23,18 @@ const ContactSection = () => {
                     </Link>
                 </div>
             </div>
+          <div className="flex flex-col">
+            
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/viewform?embedded=true"
+                width="100%"
+                height="100%"
+            >Loading…
+            </iframe>
+            </div>
+            
+          
+        
         </section>
     );
 };
