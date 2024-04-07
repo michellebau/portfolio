@@ -6,16 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ContactSection = () => {
-    // Handler function for the form submission
-    const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
-
-        alert('Thank you for your submission! I will respond to you soon.');
-
-        // Resetting the form after showing the alert
-        e.target.reset();
-    };
-
     return (
         <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
             <div>
@@ -35,7 +25,7 @@ const ContactSection = () => {
             </div>
             <div>
         
-          <form className="flex flex-col" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/formResponse" method="POST" target="_self" onSubmit={handleSubmit}>
+          <form className="flex flex-col" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/formResponse" method="POST" target="_blank">
             <div className="mb-6">
               <label
                 for="name"
