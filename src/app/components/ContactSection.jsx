@@ -31,7 +31,7 @@ const ContactSection = () => {
                 for="name"
                 className="text-white block mb-2 text-sm font-medium"
               >
-                Full Name
+                Full Name&#42;
               </label>
               <input
                 type="text"
@@ -39,7 +39,7 @@ const ContactSection = () => {
                 id="name"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Jane Smith"
+                placeholder="Michelle Bautista"
               />
             </div>
             <div className="mb-6">
@@ -47,7 +47,7 @@ const ContactSection = () => {
                 for="email"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Email Address
+                Email Address&#42;
               </label>
               <input
                 type="text"
@@ -55,7 +55,7 @@ const ContactSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jane.smith@organization.com"
+                placeholder="michelle.bautista@organization.com"
               />
             </div>
             <div className="mb-6">
@@ -63,7 +63,7 @@ const ContactSection = () => {
                 for="message"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Message
+                Message&#42;
               </label>
               <textarea
                 type="text"
