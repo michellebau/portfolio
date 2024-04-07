@@ -6,13 +6,23 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ContactSection = () => {
+    // Handler function for the form submission
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
+
+        alert('Thank you for your submission! I will respond to you soon.');
+
+        // Resetting the form after showing the alert
+        e.target.reset();
+    };
+
     return (
         <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
             <div>
                 <h5 className="text-3xl font-bold text-white my-2">Let&apos;s Connect</h5>
                 <p className="text-white mb-4 max-w-md">
                     {" "}
-                    I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+                    I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hello, I&apos;ll respond to your shortly!
                 </p>
                 <div className="socials flex flex-row gap-2">
                     <Link href="https://github.com/michellebau" target="_blank">
@@ -25,7 +35,7 @@ const ContactSection = () => {
             </div>
             <div>
         
-          <form className="flex flex-col" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/formResponse" method="POST" target="_self">
+          <form className="flex flex-col" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/formResponse" method="POST" target="_self" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
                 for="name"
