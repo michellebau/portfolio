@@ -16,6 +16,7 @@ const ContactSection = () => {
         // Your Google Form submission endpoint
         const endpoint = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSflqs0freHfwp8matOfvNXojjw2mMtTak_iBomEjE3i3ssFhA/formResponse";
 
+        // I know this is not the most secure way but I am sending responses to a Google Form
         try {
             const response = await fetch(endpoint, {
                 method: "POST",
@@ -39,7 +40,7 @@ const ContactSection = () => {
                 <h5 className="text-3xl font-bold text-white my-2">Let&apos;s Connect</h5>
                 <p className="text-white mb-4 max-w-md">
                     {" "}
-                    I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hello, I&apos;ll respond to your shortly!
+                    I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hello, I&apos;ll respond to you shortly!
                 </p>
                 <div className="socials flex flex-row gap-2">
                     <Link href="https://github.com/michellebau" target="_blank">
