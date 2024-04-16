@@ -62,10 +62,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Node.js, SQL, HTML, CSS, and Git. I am continuously expanding my knowledge and skill set. I am a team player and
-            I am excited to work with others to create and improve amazing applications.
+          Graduating in May 2024 with a Bachelor&apos;s in Web and Information Systems, I specialize in creating interactive and responsive web applications. My expertise spans JavaScript, React, Node.js, SQL, and design with Tailwind CSS. I have ventured into UX research and UI design using Figma, application deployment via Vercel, and containerization with Docker. A committed team player who enjoys taking initiative, I excel in environments that cherish innovation, learning, and collective growth. Eager to apply my technical acumen and fresh insights, I aim to contribute to projects that prioritize creativity, efficiency, and meaningful user experiences.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
