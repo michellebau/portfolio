@@ -18,6 +18,9 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>React</li>
         <li>Git</li>
+        <li>SQL Server</li>
+        <li>Excel</li>
+        <li>Tableau</li>
         <li>Figma</li>
         <li>Node.js</li>
         <li>Vercel</li>
