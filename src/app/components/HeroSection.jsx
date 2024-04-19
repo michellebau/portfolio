@@ -42,16 +42,16 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-2">
               <Link
                 href="/#contact"
-                className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-200 via-sky-300 to-blue-500 hover:bg-blue-500 text-white"
+                className="px-6 py-3 w-full sm:w-fit rounded-full bg-blue-400 text-white"
               >
-                Hire Me
+                Contact Me
               </Link>
               <a
                 href="/Michelle_Bautista_BASTA_Resume.pdf"
                 download="Michelle_Bautista_Resume.pdf"
-                className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-200 via-sky-300 to-blue-500 hover:bg-blue-500"
+                className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-200 to-blue-500 hover:bg-blue-500"
               >
-                <span className="block bg-[#121212]  hover:bg-sky-300 rounded-full px-5 py-2 text-white">
+                <span className="block bg-[#121212]  hover:bg-blue-400 rounded-full px-5 py-2 text-white">
                   Download Resume
                 </span>
               </a>
@@ -63,12 +63,12 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="col-span-1 sm:col-span-4 place-self-center mt-4 sm:mt-0"
           >
-            <div className="rounded bg-[#121212] w-full max-w-[250px] sm:max-w-[400px] h-auto relative mx-auto">
+            <div className="w-full h-auto relative">
               <Image
                 src="/images/headshot.jpg"
                 alt="hero image"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 className="rounded-md"
               />
             </div>
