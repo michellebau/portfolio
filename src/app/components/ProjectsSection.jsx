@@ -88,8 +88,7 @@ const ProjectsSection = () => {
           {/* Adjusted for dynamic tag rendering */}
           {["All", "Web", "Design", "Research", "Data"].map((tagName) => (
             <ProjectTag
-              key={tagName}
-              onClick={() => handleTagChange(tagName)}
+              onClick={handleTagChange}
               name={tagName}
               isSelected={tag === tagName}
             />
@@ -98,11 +97,11 @@ const ProjectsSection = () => {
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
           {filteredProjects.map((project, index) => (
             <motion.li
-              key={index}
+              key={project.id}
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{ duration: 0.3, delay: index * 0.4 }}
+              transition={{ duration: 0.3, delay: index * 0.25 }}
             >
               <ProjectCard
                 title={project.title}
