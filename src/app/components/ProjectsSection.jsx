@@ -88,6 +88,7 @@ const ProjectsSection = () => {
           {/* Adjusted for dynamic tag rendering */}
           {["All", "Web", "Design", "Research", "Data"].map((tagName) => (
             <ProjectTag
+              key={tagName}
               onClick={handleTagChange}
               name={tagName}
               isSelected={tag === tagName}
