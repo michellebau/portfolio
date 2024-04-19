@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Technical Skills",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
@@ -29,20 +29,22 @@ const TAB_DATA = [
     ),
   },
   {
+    title: "Soft Skills",
+    id: "s_skills",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Communication</li>
+        <li>Leadership</li>
+        <li>Teamwork</li>
+      </ul>
+    ),
+  },
+  {
     title: "Education",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
         <li>New Jersey Institute of Technology, Newark, NJ</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>DataCamp Data Science with Python (IP)</li>
       </ul>
     ),
   },
@@ -65,7 +67,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Graduating in May 2024 with a Bachelor&apos;s in Web and Information Systems, I specialize in creating interactive and responsive web applications. My expertise spans JavaScript, React, Node.js, SQL, and design with Tailwind CSS. I have ventured into UX research and UI design using Figma, application deployment via Vercel, and containerization with Docker. A committed team player who enjoys taking initiative, I excel in environments that cherish innovation, learning, and collective growth. Eager to apply my technical acumen and fresh insights, I aim to contribute to projects that prioritize creativity, efficiency, and meaningful user experiences.
+          Graduating in May 2024 with a Bachelor&apos;s in Web and Information Systems, I have experience creating interactive and responsive web applications. My expertise spans JavaScript, React, Node.js, SQL, and design with Tailwind CSS. I have ventured into UX research and UI design using Figma, application deployment via Vercel, and containerization with Docker. A committed team player who enjoys taking initiative, I excel in environments that cherish innovation, learning, and collective growth. Eager to apply my technical acumen and fresh insights, I aim to contribute to projects that prioritize creativity, efficiency, and meeting user needs. In my personal time, I enjoy cafe-hopping, taking care of my plants, and my cat, Milo.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -73,7 +75,14 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Technical Skills{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("s_skills")}
+              active={tab === "s_skills"}
+            >
+              {" "}
+              Soft Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
@@ -81,13 +90,6 @@ const AboutSection = () => {
             >
               {" "}
               Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
             </TabButton>
           </div>
           <div className="mt-8">

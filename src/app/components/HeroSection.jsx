@@ -37,7 +37,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-[#fff] text-base sm:text-lg mb-6 lg:text-xl">
-            From conceptual design in Figma to development with Next.js, I leverage modern technologies to build engaging web applications.
+            From conceptual design in Figma, through development with Next.js, to analysis with SQL, I leverage modern technologies to drive innovation in applications.
             </p>
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-2">
               <Link
@@ -46,14 +46,15 @@ const HeroSection = () => {
               >
                 Hire Me
               </Link>
-              <Link
-                href="/"
+              <a
+                href="/Michelle_Bautista_BASTA_Resume.pdf"
+                download="Michelle_Bautista_Resume.pdf"
                 className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-200 via-sky-300 to-blue-500 hover:bg-blue-500"
               >
                 <span className="block bg-[#121212]  hover:bg-sky-300 rounded-full px-5 py-2 text-white">
-                  Download CV
+                  Download Resume
                 </span>
-              </Link>
+              </a>
             </div>
           </motion.div>
           <motion.div
