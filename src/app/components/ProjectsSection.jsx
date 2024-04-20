@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Email: To Spam or Not To Spam?",
-    description: "Developed a K-Nearest Neighbors classifier to distinguish between 5,695 spam and non-spam emails, achieving a 98% accuracy rate. Employed NLP techniques including text preprocessing and TF-IDF vectorization, coupled with exploratory data analysis and visualization using Python and Scikit-learn. Feel free to explore on Google Collab.",
+    description: "Developed a K-Nearest Neighbors classifier to distinguish between 5,695 spam and non-spam emails, achieving a 98% accuracy rate. Employed NLP techniques including text preprocessing and TF-IDF vectorization, coupled with exploratory data analysis and visualization using Python and Scikit-learn. Feel free to explore on Google Colab.",
     image: "/images/projects/confusion_matrix.png",
     tag: ["All", "Data"],
     gitUrl: "https://colab.research.google.com/drive/13-OWPWN-WXKjHhZRqOKXaxIlB4V1vUZw?usp=sharing",
