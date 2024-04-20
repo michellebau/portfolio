@@ -26,9 +26,9 @@ const HeroSection = () => {
                   1000,
                   "A Web Developer",
                   1000,
-                  "A UI/UX Designer",
-                  1000,
                   "A Data Analyst",
+                  1000,
+                  "A UI/UX Designer",
                   1000,
                 ]}
                 wrapper="span"
@@ -37,7 +37,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-[#fff] text-base sm:text-lg mb-6 lg:text-xl">
-            From conceptual design in Figma, through development with Next.js, to analysis with SQL, I leverage modern technologies to drive innovation in applications.
+            I leverage modern technologies to drive innovation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-2">
               <Link
