@@ -11,17 +11,15 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Python</li>
         <li>SQL</li>
-        <li>Next.js</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Tailwind CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Git</li>
-        <li>SQL Server</li>
-        <li>Excel</li>
         <li>Tableau</li>
+        <li>Excel</li>
+        <li>SQL Server</li>
+        <li>Git</li>
         <li>Figma</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>Tailwind CSS</li>
         <li>Node.js</li>
         <li>Vercel</li>
         <li>Docker</li>
@@ -34,8 +32,12 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Communication</li>
+        <li>Presentation Skills</li>
         <li>Leadership</li>
         <li>Teamwork</li>
+        <li>Coachable</li>
+        <li>Strategic Thinking</li>
+        <li>Critical Thinking</li>
       </ul>
     ),
   },
@@ -67,7 +69,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Graduating in May 2024 with a Bachelor&apos;s in Web and Information Systems, I have experience creating interactive and responsive web applications. My toolkit includes JavaScript, React, Node.js, SQL, and design with Tailwind CSS. I have ventured into UX research and UI design using Figma, application deployment via Vercel, and containerization with Docker. A committed team player who enjoys taking initiative, I excel in environments that cherish innovation, learning, and collective growth. Eager to apply my technical acumen and fresh insights, I aim to contribute to projects that prioritize creativity, efficiency, and meeting user needs. In my personal time, I enjoy cafe-hopping, taking care of my plants, and my cat, Milo.
+          Graduating in May 2024 with a Bachelor&apos;s in Web and Information Systems, I have honed strong analytical capabilities through projects like making a high-accuracy KNN classifier and a dynamic dashboard that analyzes social media usage trends. I have experience creating responsive web applications and have ventured into UI design. <br></br><br></br>A committed team player who enjoys taking initiative, I excel in environments that cherish innovation, learning, and collective growth. Eager to apply my technical acumen and fresh insights, I aim to contribute to projects that prioritize meeting user needs and efficiency. In my personal time, I enjoy visiting new cafes, taking care of my plants, and my cat, Milo.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
