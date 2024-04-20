@@ -2,6 +2,7 @@
 import React from "react";
 import GitHubIcon from "../../../public/icons8-github-blue.svg";
 import LinkedInIcon from "../../../public/icons8-linkedin-blue.svg";
+import MailIcon from "../../../public/icons8-mail.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -48,6 +49,9 @@ const ContactSection = () => {
                     </Link>
                     <Link href="https://www.linkedin.com/in/michelleabautista/" target="_blank">
                         <Image src={LinkedInIcon} alt="LinkedIn icon"></Image>
+                    </Link>
+                    <Link href="mailto:michellebau@icloud.com" target="_blank">
+                        <Image src={MailIcon} alt="Mail icon"></Image>
                     </Link>
                 </div>
             </div>
