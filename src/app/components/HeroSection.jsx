@@ -24,12 +24,8 @@ const HeroSection = () => {
                 sequence={[
                   "Michelle",
                   1000,
-                  "A Web Developer",
-                  1000,
                   "A Data Analyst",
-                  1000,
-                  "A UI/UX Designer",
-                  1000,
+                  1000
                 ]}
                 wrapper="span"
                 speed={50}
@@ -37,7 +33,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-[#fff] text-base sm:text-lg mb-6 lg:text-xl">
-            I leverage modern technologies to drive innovation.
+            I transform data into insights for impactful decisions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-2">
               <Link
@@ -47,7 +43,7 @@ const HeroSection = () => {
                 Contact Me
               </Link>
               <a
-                href="/Michelle_Bautista_BASTA_Resume.pdf"
+                href="/Michelle_Bautista_Resume_copy.pdf"
                 download="Michelle_Bautista_Resume.pdf"
                 className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-200 to-blue-500 hover:bg-blue-500"
               >

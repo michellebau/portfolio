@@ -11,18 +11,12 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Python</li>
         <li>SQL</li>
+        <li>Snowflake</li>
+        <li>Looker Studio</li>
         <li>Tableau</li>
-        <li>Excel</li>
+        <li>Excel/Google Sheets</li>
         <li>SQL Server</li>
         <li>Git</li>
-        <li>Figma</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Tailwind CSS</li>
-        <li>Node.js</li>
-        <li>Vercel</li>
-        <li>Docker</li>
       </ul>
     ),
   },
@@ -31,10 +25,9 @@ const TAB_DATA = [
     id: "s_skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Communication</li>
+        <li>Collaboration</li>
         <li>Presentation Skills</li>
         <li>Leadership</li>
-        <li>Teamwork</li>
         <li>Coachable</li>
         <li>Strategic Thinking</li>
         <li>Critical Thinking</li>
@@ -42,18 +35,20 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Experience",
+    id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>New Jersey Institute of Technology, Newark, NJ</li>
+        <li>Data Analytics Intern, Understood.org, New York, NY</li>
+        <li>Returning Software Development Intern, Prudential Financial, Virtual, NJ</li>
+        <li>Software Development Intern, Prudential Financial, Virtual, NJ</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("experience");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -69,9 +64,16 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Graduating in May 2024 with a Bachelor&apos;s in Web and Information Systems, I have honed strong analytical capabilities through projects like making a high-accuracy KNN classifier and a dynamic dashboard that analyzes social media usage trends. I have experience creating responsive web applications and have ventured into UI design. <br></br><br></br>A committed team player who enjoys taking initiative, I excel in environments that cherish innovation, learning, and collective growth. Eager to apply my technical acumen and fresh insights, I aim to contribute to projects that prioritize meeting user needs and efficiency. In my personal time, I enjoy visiting new cafes, taking care of my plants, and my cat, Milo.
+          I&apos;m Michelle Bautista, a May 2024 graduate from the New Jersey Institute of Technology with a B.S. in Web and Information Systems. My journey into data visualization began during my first internship at Prudential Financial, where I created a standardized PowerPoint template that streamlined vendor performance analysis. This experience, along with my current Data Analytics internship at Understood.org, has deepened my passion for a career in data analytics.<br></br><br></br>I am committed to refining my skills in data analysis, leveraging my experiences at Prudential Financial and Understood.org, to help organizations make data-driven decisions that create a positive impact. For fun, I like to read and visit parks. I have also recently begun trying Pilates.
           </p>
           <div className="flex flex-row justify-start mt-8">
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              {" "}
+              Experience{" "}
+            </TabButton>
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -85,13 +87,6 @@ const AboutSection = () => {
             >
               {" "}
               Soft Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
             </TabButton>
           </div>
           <div className="mt-8">
