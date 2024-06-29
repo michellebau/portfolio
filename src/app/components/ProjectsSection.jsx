@@ -11,7 +11,6 @@ const projectsData = [
     description: "During my last year of undergrad, I had the honor of founding a new student organization to increase the support and representation of Hispanic or Latine students in computing majors. I led countless meetings to organize 15+ workshops and networking events per semester for our members and other interested students. Feel free to read the article linked above.",
     image: "/images/projects/haccsmas_copy.jpg",
     tag: ["All", "Leadership and Advocacy"],
-    gitUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
     previewUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
   },
   {
@@ -20,7 +19,6 @@ const projectsData = [
     description: "Developed and trained machine learning models to predict spam emails. Employed NLP techniques including text preprocessing and TF-IDF vectorization, coupled with exploratory data analysis and visualization using matplotlib and scikit-learn. Feel free to explore on Google Colab.",
     image: "/images/projects/confusion_matrix.png",
     tag: ["All", "Data"],
-    gitUrl: "https://colab.research.google.com/drive/13-OWPWN-WXKjHhZRqOKXaxIlB4V1vUZw?usp=sharing",
     previewUrl: "https://colab.research.google.com/drive/13-OWPWN-WXKjHhZRqOKXaxIlB4V1vUZw?usp=sharing",
   },
   {
@@ -29,7 +27,6 @@ const projectsData = [
     description: "Crafted and published an insightful Tableau dashboard that dynamically illustrates trends in social media usage across three countries and multiple age groups, showcasing analytical skills for a university course project.",
     image: "/images/projects/Average_social_media_usage.png",
     tag: ["All", "Data"],
-    gitUrl: "https://public.tableau.com/views/AverageSocialMediaUsageAtAGlance/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link",
     previewUrl: "https://public.tableau.com/views/AverageSocialMediaUsageAtAGlance/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link",
   },
   {
@@ -38,7 +35,6 @@ const projectsData = [
     description: "Quantitative analysis group project using SPSS examining how social media posts centered around personal development affect individuals' motivation and self-esteem.",
     image: "/images/projects/IS448_research.png",
     tag: ["All", "Data"],
-    gitUrl: "/",
     previewUrl: "https://docs.google.com/presentation/d/1yO6AsuYUSIgYs71DDFK3SFQ-MUzEvHFJRNwPp9Wb89c/edit?usp=sharing",
   },
   {
@@ -47,8 +43,7 @@ const projectsData = [
     description: "Porfolio website (what you're viewing) built with React, Tailwind CSS, Next.js, Node.js, and deployed on Vercel.",
     image: "/images/projects/react_logo.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/michellebau/portfolio",
-    previewUrl: "https://michelle-bautista.vercel.app",
+    previewUrl: "https://github.com/michellebau/portfolio",
   },
 ];
 
@@ -99,7 +94,6 @@ const ProjectsSection = () => {
                 title={project.title}
                 description={project.description}
                 imgUrl={project.image}
-                gitUrl={project.gitUrl}
                 previewUrl={project.previewUrl}
               />
             </motion.li>

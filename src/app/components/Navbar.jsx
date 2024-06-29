@@ -31,8 +31,8 @@ const Navbar = () => {
           <Image
             src="/images/icons8-combo-chart-50.png"
             alt="code gradient icon"
-            width={50}
-            height={50}
+            width={48}
+            height={48}
           />
       </Link>
         <div className="mobile-menu block md:hidden">
