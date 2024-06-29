@@ -7,17 +7,17 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Porfolio website (what you're viewing) built with React, Tailwind CSS, Next.js, Node.js, and deployed on Vercel.",
-    image: "/images/projects/react_logo.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/michellebau/portfolio",
-    previewUrl: "https://michelle-bautista.vercel.app",
+    title: "Founding the Hispanic Association of Computing College Students (HACCS)",
+    description: "During my last year of undergrad, I had the honor of founding a new student organization to increase the support and representation of Hispanic or Latine students in computing majors. I led countless meetings to organize 15+ workshops and networking events per semester for our members and other interested students. Feel free to read the article linked above.",
+    image: "/images/projects/haccsmas_copy.jpg",
+    tag: ["All", "Leadership and Advocacy"],
+    gitUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
+    previewUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
   },
   {
     id: 2,
     title: "Email: To Spam or Not To Spam?",
-    description: "Developed a K-Nearest Neighbors classifier to distinguish between 5,695 spam and non-spam emails, achieving a 98% accuracy rate. Employed NLP techniques including text preprocessing and TF-IDF vectorization, coupled with exploratory data analysis and visualization using Python and Scikit-learn. Feel free to explore on Google Colab.",
+    description: "Developed and trained machine learning models to predict spam emails. Employed NLP techniques including text preprocessing and TF-IDF vectorization, coupled with exploratory data analysis and visualization using matplotlib and scikit-learn. Feel free to explore on Google Colab.",
     image: "/images/projects/confusion_matrix.png",
     tag: ["All", "Data"],
     gitUrl: "https://colab.research.google.com/drive/13-OWPWN-WXKjHhZRqOKXaxIlB4V1vUZw?usp=sharing",
@@ -43,13 +43,13 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Founding the Hispanic Association of Computing College Students (HACCS)",
-    description: "During my last year of undergrad, I had the honor of founding a new student organization to increase the support and representation of Hispanic or Latine students in computing majors. I led countless meetings to organize 15+ workshops and networking events per semester for our members and other interested students. Feel free to read the article linked above.",
-    image: "/images/projects/haccsmas_copy.jpg",
-    tag: ["All", "Leadership and Advocacy"],
-    gitUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
-    previewUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
-  }
+    title: "React Portfolio Website",
+    description: "Porfolio website (what you're viewing) built with React, Tailwind CSS, Next.js, Node.js, and deployed on Vercel.",
+    image: "/images/projects/react_logo.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/michellebau/portfolio",
+    previewUrl: "https://michelle-bautista.vercel.app",
+  },
 ];
 
 const ProjectsSection = () => {
