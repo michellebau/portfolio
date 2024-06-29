@@ -29,29 +29,11 @@ const projectsData = [
     description: "Crafted and published an insightful Tableau dashboard that dynamically illustrates trends in social media usage across three countries and multiple age groups, showcasing analytical skills for a university course project.",
     image: "/images/projects/Average_social_media_usage.png",
     tag: ["All", "Data"],
-    gitUrl: "/",
+    gitUrl: "https://public.tableau.com/views/AverageSocialMediaUsageAtAGlance/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link",
     previewUrl: "https://public.tableau.com/views/AverageSocialMediaUsageAtAGlance/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link",
   },
   {
     id: 4,
-    title: "Recycling Web App",
-    description: "Built a web app featuring PyTorch and TensorFlow suggesting how to recycle an item based on its image.",
-    image: "/images/projects/torch_logo.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/michellebau/recycling",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "WIS Club UI Design",
-    description: "Created a Figma clickable prototype for professor's project. This design consists of a landing page and events page(s) for the purpose of displaying guest lectures on campus.",
-    image: "/images/projects/WIS_Club.png",
-    tag: ["All", "Design"],
-    gitUrl: "https://www.figma.com/file/jBk34sfHdqMMdZj19u1mGK/421-UI?type=design&node-id=0%3A1&mode=design&t=IEwuH9Mqf8P6gdys-1",
-    previewUrl: "https://www.figma.com/proto/jBk34sfHdqMMdZj19u1mGK/421-UI?page-id=0%3A1&type=design&node-id=0-3732&viewport=395%2C385%2C0.05&t=9VGEt2tif32FylGB-1&scaling=min-zoom&mode=design",
-  },
-  {
-    id: 6,
     title: "Does social media affect motivation and productivity?",
     description: "Quantitative analysis group project using SPSS examining how social media posts centered around personal development affect individuals' motivation and self-esteem.",
     image: "/images/projects/IS448_research.png",
@@ -59,6 +41,15 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://docs.google.com/presentation/d/1yO6AsuYUSIgYs71DDFK3SFQ-MUzEvHFJRNwPp9Wb89c/edit?usp=sharing",
   },
+  {
+    id: 5,
+    title: "Founding the Hispanic Association of Computing College Students (HACCS)",
+    description: "During my last year of undergrad, I had the honor of founding a new student organization to increase the support and representation of Hispanic or Latine students in computing majors. I led countless meetings to organize 15+ workshops and networking events per semester for our members and other interested students. Feel free to read the article linked above.",
+    image: "/images/projects/haccsmas_copy.jpg",
+    tag: ["All", "Leadership and Advocacy"],
+    gitUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
+    previewUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
+  }
 ];
 
 const ProjectsSection = () => {
@@ -86,7 +77,7 @@ const ProjectsSection = () => {
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6 flex-wrap">
           {/* Adjusted for dynamic tag rendering */}
-          {["All", "Data", "Web", "Design"].map((tagName) => (
+          {["All", "Data", "Web", "Leadership and Advocacy"].map((tagName) => (
             <ProjectTag
               key={tagName}
               onClick={handleTagChange}
