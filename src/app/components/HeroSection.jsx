@@ -24,9 +24,9 @@ const HeroSection = () => {
                 sequence={[
                   "Michelle",
                   1500,
-                  "A Data Analyst",
+                  "a data analyst",
                   1500,
-                  "An Advocate",
+                  "an advocate",
                   1500
                 ]}
                 wrapper="span"
@@ -44,15 +44,7 @@ const HeroSection = () => {
               >
                 Contact Me
               </Link>
-              <a
-                href="/Michelle_Bautista_Resume_copy.pdf"
-                download="Michelle_Bautista_Resume.pdf"
-                className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-blue-200 hover:bg-emerald-100"
-              >
-                <span className="block bg-[#121212] hover:bg-emerald-100 hover:text-black rounded-full px-5 py-2 text-white">
-                  Download Resume
-                </span>
-              </a>
+              
             </div>
           </motion.div>
           <motion.div
@@ -63,7 +55,7 @@ const HeroSection = () => {
           >
             <div className="w-full h-auto relative">
               <Image
-                src="/images/linkedin_pfp.jpeg"
+                src="/images/062024_headshot_square_copy.jpg"
                 alt="hero image"
                 width={500}
                 height={500}
