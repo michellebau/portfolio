@@ -7,14 +7,22 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Founding the Hispanic Association of Computing College Students (HACCS)",
-    description: "During my last year of undergrad, I had the honor of founding a new student organization to increase the support and representation of Hispanic or Latine students in computing majors. I led countless meetings to organize 15+ workshops and networking events per semester for our members and other interested students. Feel free to read the article linked above.",
-    image: "/images/projects/haccsmas_copy.jpg",
-    tag: ["All", "Leadership and Advocacy"],
-    previewUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
+    title: "Organic Social Dashboard",
+    description: "After analyzing organic social data using SQL and Snowflake as well as leading stakeholder meetings with the Organic Social team at Understood, I created a Looker Dashboard to display insights into social content performance at a monthly, weekly, and post level to inform content strategy and save time creating monthly reports. Throughout this project, I created a user and functional requirements document as well as a wireframe to guide the dashboard's layout. I also conducted User Acceptance Testing (UAT) to ensure data accuracy and completeness. You may view the demo linked above.",
+    image: "/images/projects/organic_social_dashboard.png",
+    tag: ["All", "Data"],
+    previewUrl: "https://youtu.be/m_A43a6Jm8s",
   },
   {
     id: 2,
+    title: "Founding the Hispanic Association of Computing College Students (HACCS)",
+    description: "During my last year of undergrad, I had the honor of founding a new student organization to increase the support and representation of Hispanic or Latine students in computing majors. I led countless meetings to organize 15+ workshops and networking events per semester for our members and other interested students. Feel free to read the article linked above.",
+    image: "/images/projects/haccsmas_copy.jpg",
+    tag: ["All", "Leadership and advocacy"],
+    previewUrl: "https://news.njit.edu/hispanic-association-computing-college-students-takes-njit",
+  },
+  {
+    id: 3,
     title: "Email: To Spam or Not To Spam?",
     description: "Developed and trained machine learning models to predict spam emails. Employed NLP techniques including text preprocessing and TF-IDF vectorization, coupled with exploratory data analysis and visualization using matplotlib and scikit-learn. Feel free to explore on Google Colab.",
     image: "/images/projects/confusion_matrix.png",
@@ -22,7 +30,7 @@ const projectsData = [
     previewUrl: "https://colab.research.google.com/drive/13-OWPWN-WXKjHhZRqOKXaxIlB4V1vUZw?usp=sharing",
   },
   {
-    id: 3,
+    id: 4,
     title: "Average Social Media Usage",
     description: "Crafted and published an insightful Tableau dashboard that dynamically illustrates trends in social media usage across three countries and multiple age groups, showcasing analytical skills for a university course project.",
     image: "/images/projects/Average_social_media_usage.png",
@@ -30,7 +38,7 @@ const projectsData = [
     previewUrl: "https://public.tableau.com/views/AverageSocialMediaUsageAtAGlance/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link",
   },
   {
-    id: 4,
+    id: 5,
     title: "Does social media affect motivation and productivity?",
     description: "Quantitative analysis group project using SPSS examining how social media posts centered around personal development affect individuals' motivation and self-esteem.",
     image: "/images/projects/IS448_research.png",
@@ -38,7 +46,7 @@ const projectsData = [
     previewUrl: "https://docs.google.com/presentation/d/1yO6AsuYUSIgYs71DDFK3SFQ-MUzEvHFJRNwPp9Wb89c/edit?usp=sharing",
   },
   {
-    id: 5,
+    id: 6,
     title: "React Portfolio Website",
     description: "Porfolio website (what you're viewing) built with React, Tailwind CSS, Next.js, Node.js, and deployed on Vercel.",
     image: "/images/projects/react_logo.png",
@@ -68,11 +76,11 @@ const ProjectsSection = () => {
     return (
       <section id="projects">
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-          My Projects
+          My projects
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6 flex-wrap">
           {/* Adjusted for dynamic tag rendering */}
-          {["All", "Data", "Web", "Leadership and Advocacy"].map((tagName) => (
+          {["All", "Data", "Web", "Leadership and advocacy"].map((tagName) => (
             <ProjectTag
               key={tagName}
               onClick={handleTagChange}
