@@ -9,17 +9,15 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Data visualization</li>
         <li>Data analysis</li>
+        <li>Dashboard development and maintenance</li>      
+        <li>Reporting automation</li>  
         <li>SQL</li>
         <li>Python</li>
         <li>Snowflake</li>
-        <li>Looker</li>
-        <li>Tableau</li>
-        <li>Excel/Google Sheets</li>
-        <li>SQL Server</li>
+        <li>Excel</li>
         <li>Git</li>
-        <li>Jira</li>
+        <li>Docker</li>
       </ul>
     ),
   },
@@ -31,9 +29,6 @@ const TAB_DATA = [
         <li>Critical thinking</li>
         <li>Cross-functional collaboration</li>
         <li>Stakeholder communication</li>
-        <li>Presentation skills</li>
-        <li>Executive presentations</li>
-        <li>Leadership</li>
       </ul>
     ),
   },
@@ -42,9 +37,8 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Data Analytics Intern, Understood, New York, NY</li>
-        <li>Returning Software Development Intern, Prudential Financial, (Remote), NJ</li>
-        <li>Software Development Intern, Prudential Financial, (Remote), NJ</li>
+        <li>Analytics Associate @ Vistar Media, October 2024 - Present</li>
+        <li>Data Analytics Intern @ Understood, June 2024 - August 2024</li>
       </ul>
     ),
   },
@@ -67,7 +61,15 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
           <p className="text-base lg:text-lg">
-          I&apos;m Michelle Bautista, a May 2024 graduate from the New Jersey Institute of Technology with a B.S. in Web and Information Systems. My journey into data began during my first internship at Prudential Financial, where I created a standardized PowerPoint template that streamlined vendor performance analysis. This experience, along with my recent Data Analytics internship at Understood, has deepened my passion for a career in data analytics.<br></br><br></br>I am committed to refining my skills in data analysis, leveraging my experiences at Prudential Financial and Understood, to help organizations make data-driven decisions that create a positive impact. For fun, I like to read and visit parks. I also enjoy painting ceramics.
+            I&apos;m Michelle Bautista, a data analyst with experience in digital ad and DOOH analytics, specializing in automated reporting,
+            dashboard development, and stakeholder-ready insights.
+            
+            <br></br><br></br>
+            I'm proficient in Python, SQL, and Excel with a track record of building tools leveraged across multiple teams.
+            I'm currently focused on growing my cross-collaboration experience across technical and non-technical audiences.
+          
+          <br></br><br></br>
+          In my spare time, I enjoy Pilates classes, hanging out with my cat, Milo, and participate weekly in a Toastmasters chapter.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

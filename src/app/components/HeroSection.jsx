@@ -26,7 +26,7 @@ const HeroSection = () => {
                   1500,
                   "a data analyst",
                   1500,
-                  "an advocate",
+                  "a developer",
                   1500
                 ]}
                 wrapper="span"
@@ -35,7 +35,7 @@ const HeroSection = () => {
               />
             </h1>
             <p className="text-[#fff] text-base sm:text-lg mb-6 lg:text-xl">
-            I transform data into insights for impactful decisions.
+            I leverage data to make impactful decisions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-2">
               <Link
