@@ -65,8 +65,8 @@ const AboutSection = () => {
             dashboard development, and stakeholder-ready insights.
             
             <br></br><br></br>
-            I'm proficient in Python, SQL, and Excel with a track record of building tools leveraged across multiple teams.
-            I'm currently focused on growing my cross-collaboration experience across technical and non-technical audiences.
+            I&apos;m proficient in Python, SQL, and Excel with a track record of building tools leveraged across multiple teams.
+            I&apos;m currently focused on growing my cross-collaboration experience across technical and non-technical audiences.
           
           <br></br><br></br>
           In my spare time, I enjoy Pilates classes, hanging out with my cat, Milo, and participate weekly in a Toastmasters chapter.
